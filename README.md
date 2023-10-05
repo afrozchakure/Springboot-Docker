@@ -1,28 +1,28 @@
-### Dockerizing a simple springboot application 
+## Dockerizing a simple springboot application 
 
-#### Running springboot in VScode 
-> Search `spring` in extension, download top 4 extensions.
+### Running springboot in VScode 
+1. Search `spring` in extension, download top 4 extensions.
 
-> Search `java` in extension tab, download the first extension by Microsoft.
+2. Search `java` in extension tab, download the first extension by Microsoft.
 
-#### Installing Java and setting up VSCode for Springboot development 
+### Installing Java and setting up VSCode for Springboot development 
 * Refer video here: https://www.youtube.com/watch?v=2qbf4Duqncw
 
-#### Creating Docker container using springboot
+### Creating Docker container using springboot
 * Refer video here: https://www.youtube.com/watch?v=3SNKdr3f9Io
 
-#### Testing whether your service is running 
+### Testing whether your service is running 
 > curl localhost:8000/api/hw
 output: Hello World
 
-#### Creating jar file in java 
+### Creating jar file in java 
 * Creating `jar` file in `target` folder
 > mvn clean package 
 
 * Running jar file 
 > java -jar hw-0.0.0.1-SNAPSHOT.jar 
 
-#### Docker command for running the springboot application 
+### Docker command for running the springboot application 
 
 * Running docker container at port 8000 with springboot application port as 8080
 > docker run -p 8000:8080 springapi  # 8080 (Springboot applicaiton port), forwarding it to 8000 (docker port) 
@@ -36,7 +36,7 @@ output: Hello World
 * See running docker containers 
 > docker container ls 
 
-#### Docker Commands 
+### Docker Commands 
 
 * Checking docker images 
 > docker images 
@@ -58,7 +58,7 @@ output: Hello World
        `OR`
 > docker exec -it da98 bash 
 
-#### Commiting changes
+### Commiting changes
 
 1. git init
 2. git add . 
