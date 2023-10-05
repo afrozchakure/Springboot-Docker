@@ -59,8 +59,9 @@ output: Hello World
 > docker exec -it da98 bash 
 
 #### Commiting changes
-> git init
-> git add . 
-> git commit -m "Add changes" 
-> git remote add origin https://github.com/afrozchakure/Springboot-Docker.git
-> git push -u origin main
+
+1. git init
+2. git add . 
+3. git commit -m "Add changes" 
+4. git remote add origin https://github.com/afrozchakure/Springboot-Docker.git
+5. git push -u origin main
