@@ -27,7 +27,7 @@ output: Hello World
 * Running docker container at port 8000 with springboot application port as 8080
 > docker run -p 8000:8080 springapi  # 8080 (Springboot applicaiton port), forwarding it to 8000 (docker port) 
 
-* Running the container in dormat mode (-d) 
+* Running the container in dormant mode (-d) - (No prompt will be shown, container will be runnign silently)
 > docker run -d -p 8000:8080 springapi   
 
 * Removing docker container with particular sha
