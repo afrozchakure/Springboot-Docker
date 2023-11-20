@@ -23,6 +23,6 @@ public class HwApplicationTests {
 		this.mvc.perform(MockMvcRequestBuilders.get("/api/hw"))
 				.andDo(print())
 				.andExpect(status().isOk())
-				.andExpect(content().string("This is a test case"));
+				.andExpect(content().string("Hello World"));
 	}
 }
