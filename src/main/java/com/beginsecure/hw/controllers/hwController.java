@@ -8,6 +8,6 @@ public class hwController {
 
     @GetMapping("/api/hw")
     public String hwMessage() {
-        return "This is a new world";
+        return "Hello World";
     }
 }
