@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -18,7 +19,8 @@ public class HwApplicationTests {
 
 	@Test
 	public void testHwServiceStatus() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/api/hw"))
+		this.mvc.perform(MockMvcRequestBuilders.get("/api/hw"))
+				.andDo(print())
 				.andExpect(status().isOk());
 	}
 }
